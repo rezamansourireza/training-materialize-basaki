@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: "Byekan";
+    src: url(../font/BYekan-webfont.eot) format(eot),
+        url(../font/BYekan-webfont.woff) format(woff),
+        url(../font/BYekan-webfont.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    direction: rtl;
+    font-family: "Byekan";
+    text-align: right;
+}
