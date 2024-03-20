@@ -24,3 +24,14 @@
     background-color: purple;
     height: 100px;
 }
+
+nav .sidenav-trigger {
+    float: right !important;
+}
+
+@media (min-width:992px){
+    nav .brand-logo{
+        right: unset !important;
+        left: 0.5rem !important;
+    }
+}

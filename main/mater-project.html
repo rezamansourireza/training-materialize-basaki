@@ -8,24 +8,32 @@
     <link rel="stylesheet" href="/main/assest/css/util.css">
     <link rel="stylesheet" href="/main/assest/css/materialize-rtl.css">
     <link rel="stylesheet" href="/main/assest/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/main/assest/css/style.css">
 </head>
 
 <body dir="rtl">
-    <div class="comtainer main_container container">
-        <div class="row">
-            <div class="col s12 m4 l3 xl2 pink darken-1 valign-wrapper hide-on-med-and-down">
-                سلامنعلیکم
-            </div>
-            <div class="col s12 m4 l3 xl2 light-blue lighten-3 center hoverable">
-                سلامنعلیکم
-            </div>
-            <div class="col s12 m4 l3 xl2 orange lighten-1 left-align hide-on-extra-large-only">
-                سلامنعلیکم
-            </div>
+    <!-------------------------------- start navbar ----------------------------->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
         </div>
-    </div>
+      </nav>
     
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    <!---------------------------------- end nabvar ----------------------------->
 
 <script src="/main/assest/js/materialize.js"></script>
 <script src="/main/assest/js/app.js"></script>
