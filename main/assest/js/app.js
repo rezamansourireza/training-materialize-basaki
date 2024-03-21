@@ -7,4 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     M.Tabs.init(tabs, {
         swipeable:true
     });
+    var actionbutton = document.querySelectorAll('.fixed-action-btn');
+    M.FloatingActionButton.init(actionbutton, {
+        toolbarEnabled: true
+    });
 });
