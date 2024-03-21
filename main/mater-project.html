@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>materialize-project-basaki</title>
-    <link rel="stylesheet" href="/main/assest/css/materialize.css">
-    <link rel="stylesheet" href="/main/assest/css/util.css">
-    <link rel="stylesheet" href="/main/assest/css/materialize-rtl.css">
-    <link rel="stylesheet" href="/main/assest/fontawesome/css/all.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="/main/assest/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main/assest/css/materialize.css">
+  <link rel="stylesheet" href="/main/assest/css/materialize-rtl.css">
+  <link rel="stylesheet" href="/main/assest/fontawesome/css/all.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/main/assest/css/style.css">
+  <script src="https://kit.fontawesome.com/431b44931a.js" crossorigin="anonymous"></script>
+  <title>مدیریت ساختمان</title>
 </head>
 
 <body dir="rtl">
-    <!-------------------------------- start navbar ----------------------------->
+  <!-------------------------------- start header ----------------------------->
+  <div class="navbar-fixed">
     <nav class="light-blue lighten-1">
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">
-            <img src="/main/assest/image/logo.png">
-          </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-        </div>
-      </nav>
-    
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    <!---------------------------------- end nabvar ----------------------------->
+        <a href="#!" class="brand-logo">
+          <img src="/main/assest/image/logo.png" alt="">
+        </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+        <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
+          <li class="tab"><a href="#content1">داشبور</a></li>
+          <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
+          <li class="tab"><a href="#content3">افزودن هزینه ها</a></li>
+          <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
+          <li class="tab"><a href="#content5">پیام ها</a></li>
+        </ul>
+    </nav>
+  </div>
+  <ul class="sidenav main_ul_navbar" id="mobile-demo">
+    <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
+    <li class="tab"><a href="#content3">افزودن هزینه ها</a></li>
+    <li class="tab"><a href="#content1">داشبور</a></li>
+    <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
+    <li class="tab"><a href="#content5">پیام ها</a></li>
+  </ul>
+  <!---------------------------------- end header ----------------------------->
+  <!-- <section class="main_content"> -->
+    <div id="content1" class="item_content orange"></div>
+    <div id="content2" class="item_content yellow"></div>
+    <div id="content3" class="item_content blue"></div>
+    <div id="content4" class="item_content pink"></div>
+    <div id="content5" class="item_content purple"></div>
+  <!-- </section> -->
 
-<script src="/main/assest/js/materialize.js"></script>
-<script src="/main/assest/js/app.js"></script>
+
+  <script src="/main/assest/js/materialize.js"></script>
+  <script src="/main/assest/js/app.js"></script>
 </body>
+
 </html>

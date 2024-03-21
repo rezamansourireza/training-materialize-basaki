@@ -2,8 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {
         edge: "right" ,
-        // onOpenEnd: () => {
-        //     alert('hellow baby')
-        // }
+    });
+    var tabs = document.querySelectorAll('.main_ul_navbar');
+    M.Tabs.init(tabs, {
+        swipeable:true
     });
 });
