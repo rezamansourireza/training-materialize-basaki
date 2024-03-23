@@ -106,8 +106,20 @@ nav .brand-logo img {
     transform: scale(1);
 }
 #content1{
-    background: rgb(15,7,252);
-background: linear-gradient(180deg, rgba(15,7,252,1) 12%, rgba(20,110,168,0.972286277792367) 54%, rgba(31,135,203,0.972286277792367) 84%);
+    background: rgb(201,222,235);
+    background: linear-gradient(180deg, rgba(201,222,235,0.972286277792367) 0%, rgba(42,35,249,1) 34%, rgba(255,255,255,1) 35%);
+}
+
+.px_4{
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+@media(min-width:601px){
+    .px_md_5{
+        padding-left: 5rem !important;
+        padding-right: 5rem !important;
+    }
 }
 
 @media (min-width:992px) {
