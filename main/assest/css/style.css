@@ -105,6 +105,10 @@ nav .brand-logo img {
     bottom: 10px;
     transform: scale(1);
 }
+#content1{
+    background: rgb(15,7,252);
+background: linear-gradient(180deg, rgba(15,7,252,1) 12%, rgba(20,110,168,0.972286277792367) 54%, rgba(31,135,203,0.972286277792367) 84%);
+}
 
 @media (min-width:992px) {
     nav .brand-logo {

@@ -17,50 +17,67 @@
   <!-------------------------------- start header ----------------------------->
   <div class="navbar-fixed">
     <nav class="light-blue lighten-1">
-        <a href="#!" class="brand-logo">
-          <img src="/main/assest/image/logo.png" alt="">
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-        <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
-          <li class="tab"><a class="menu_links_desktop" href="#content1">داشبور</a></li>
-          <li class="tab"><a class="menu_links_desktop" href="#content2">مدیریت مخارج</a></li>
-          <li class="tab"><a class="menu_links_desktop" href="#content3">افزودن هزینه ها</a></li>
-          <li class="tab"><a class="menu_links_desktop" href="#content4">مدیریت همسایگان</a></li>
-          <li class="tab"><a class="menu_links_desktop" href="#content5">پیام ها</a></li>
-        </ul>
+      <a href="#!" class="brand-logo">
+        <img src="/main/assest/image/logo.png" alt="">
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+      <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
+        <li class="tab"><a class=" " href="#content1">داشبور</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content2">مدیریت مخارج</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content3">افزودن هزینه ها</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content4">مدیریت همسایگان</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content5">پیام ها</a></li>
+      </ul>
     </nav>
   </div>
   <ul class="sidenav main_ul_navbar" id="mobile-demo">
-    <li class="tab"><a href="#content1">داشبور</a></li>
-    <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
-    <li class="tab"><a href="#content3">افزودن هزینه ها</a></li>
-    <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
-    <li class="tab"><a href="#content5">پیام ها</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content1">داشبور</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content2">مدیریت مخارج</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content3">افزودن هزینه ها</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content4">مدیریت همسایگان</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content5">پیام ها</a></li>
   </ul>
   <!---------------------------------- end header ----------------------------->
   <!-- <section class="main_content"> -->
-    <div id="content1" class="item_content orange"></div>
-    <div id="content2" class="item_content yellow"></div>
-    <div id="content3" class="item_content blue"></div>
-    <div id="content4" class="item_content pink"></div>
-    <div id="content5" class="item_content purple"></div>
+  <div id="content1" class="item_content orange">
+    <div class="row">
+      <div class="col s12 m6 l4 ProgressBar_grid">
+        <span class="white-text">
+          <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
+            <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.7)" />
+            <path fill="none" stroke-linecap="round" stroke-width="6" stroke="#006064"
+            stroke-dasharray="126.5,126.5"
+            d="m50 10
+            a 40 40 0 0 1 0 80
+            a 40 40 0 0 1 0 -80"/>
+            <text x="50" y="35" fill="#006064" text-anchor="middle" dy="7" font-size="20">50%</text>
+            <text x="50" y="55" fill="#006064" text-anchor="middle" dy="7" font-size="10">پرداخت ها</text>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div id="content2" class="item_content yellow"></div>
+  <div id="content3" class="item_content blue"></div>
+  <div id="content4" class="item_content pink"></div>
+  <div id="content5" class="item_content purple"></div>
   <!-- </section> -->
 
   <!-------------------------------bottom menu start------------------------------->
-  
-<div class="fixed-action-btn toolbar hide-on-med-and-up">
-  <a class="btn-floating btn-large blue darken-3 flouting_quick-access">
-    <i class="fas fa-bars"></i>
-  </a>
-  <ul>
-    <li><a href="#content2" class="btn-floating  darken-1"><i class="fa-solid fa-users"></i></a></li>
-    <li><a href="#content3" class="btn-floating "><i class="fa-solid fa-user-plus"></i></a></li>
-    <li><a href="#content4" class="btn-floating "><i class="fa-solid fa-money-bill-wave"></i></a></li>
-    <li><a href="#content5" class="btn-floating "><i class="fa-solid fa-envelope"></i></a></li>
-  </ul>
-</div>
 
-<!-------------------------------bottom menu end---------------------------------->
+  <div class="fixed-action-btn toolbar hide-on-med-and-up">
+    <a class="btn-floating btn-large blue darken-3 flouting_quick-access">
+      <i class="fas fa-bars"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating quick_access_items darken-1"><i class="fa-solid fa-users"></i></a></li>
+      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-user-plus"></i></a></li>
+      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-money-bill-wave"></i></a></li>
+      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+  </div>
+
+  <!-------------------------------bottom menu end---------------------------------->
 
   <script src="/main/assest/js/materialize.js"></script>
   <script src="/main/assest/js/app.js"></script>
