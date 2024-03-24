@@ -18,17 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
     var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));
     for (const item of quickAccessNodes) {
         item.addEventListener('click', function () {
@@ -62,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 clearInterval(progressInterval);
             }
         }, 25)
-
     }
 
+    
 });
