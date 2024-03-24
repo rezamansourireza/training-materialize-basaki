@@ -13,6 +13,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    var selectElm = document.querySelectorAll('select');
+    M.FormSelect.init(selectElm , {});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));
     for (const item of quickAccessNodes) {
@@ -27,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     animateprogress('pay_progress_path', 'pay_progress_text', 50)
     animateprogress('floor_progress_path', 'floor_progress_text', 90)
+
     function animateprogress(PathDomId, TextDomId, percent) {
         let startpercent = 0;
         let maxpercent = percent;
@@ -42,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 startpercent += 1
                 stratprogress += 2.53
                 maxprogress -= 2.53
-            }else{
+            } else {
                 clearInterval(progressInterval);
             }
         }, 25)

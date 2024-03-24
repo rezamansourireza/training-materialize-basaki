@@ -13,6 +13,7 @@
   <title>مدیریت ساختمان</title>
 </head>
 
+
 <body dir="rtl">
   <!-------------------------------- start header ----------------------------->
   <div class="navbar-fixed">
@@ -22,35 +23,54 @@
       </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
       <ul class="navbar_ul right hide-on-med-and-down main_ul_navbar">
-        <li class="tab"><a class=" " href="#content1">داشبور</a></li>
-        <li class="tab"><a class="menu_links_desktop" href="#content2">مدیریت مخارج</a></li>
-        <li class="tab"><a class="menu_links_desktop" href="#content3">افزودن هزینه ها</a></li>
-        <li class="tab"><a class="menu_links_desktop" href="#content4">مدیریت همسایگان</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content1">داشبور</a></li>
+        <li class="tab"><a class="menu_links_desktop active" href="#content2">افزودن همسایه</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content3">مدیریت همسایگان</a></li>
+        <li class="tab"><a class="menu_links_desktop" href="#content4">افزودن هزینه</a></li>
         <li class="tab"><a class="menu_links_desktop" href="#content5">پیام ها</a></li>
       </ul>
     </nav>
   </div>
   <ul class="sidenav main_ul_navbar" id="mobile-demo">
     <li class="tab"><a class="menu_item_list" href="#content1">داشبور</a></li>
-    <li class="tab"><a class="menu_item_list" href="#content2">مدیریت مخارج</a></li>
-    <li class="tab"><a class="menu_item_list" href="#content3">افزودن هزینه ها</a></li>
-    <li class="tab"><a class="menu_item_list" href="#content4">مدیریت همسایگان</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content2">افزودن همسایه</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content3">مدیریت همسایگان</a></li>
+    <li class="tab"><a class="menu_item_list" href="#content4">افزودن هزینه</a></li>
     <li class="tab"><a class="menu_item_list" href="#content5">پیام ها</a></li>
   </ul>
   <!---------------------------------- end header ----------------------------->
-  <!-- <section class="main_content"> -->
-  <div id="content1" class="item_content orange">
+
+
+  <!-------------------------------quick access start------------------------------->
+  <div class="fixed-action-btn toolbar hide-on-med-and-up">
+    <a class="btn-floating btn-large blue darken-3 flouting_quick-access">
+      <i class="fas fa-bars"></i>
+    </a>
+    <ul>
+      <li><a class="btn-floating quick_access_items darken-1"><i class="fa-solid fa-user-plus"></i></a></li>
+      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-users"></i></a></li>
+      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-money-bill-wave"></i></a></li>
+      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-envelope"></i></a></li>
+    </ul>
+  </div>
+  <!-------------------------------quick access end---------------------------------->
+
+
+
+
+  <!----------------================DashBoard Start==============---------------->
+  <div id="content1" class="item_content">
     <div class="row">
       <div class="col s12 m6 l4 ProgressBar_grid px_4 px_md_5">
         <span class="white-text">
           <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
             <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.7)" />
             <path id="pay_progress_path" fill="none" stroke-linecap="round" stroke-width="6" stroke="#006064"
-            stroke-dasharray="126.5,126.5"
-            d="m50 10
+              stroke-dasharray="126.5,126.5" d="m50 10
             a 40 40 0 0 1 0 80
-            a 40 40 0 0 1 0 -80"/>
-            <text id="pay_progress_text" x="50" y="35" fill="#006064" text-anchor="middle" dy="7" font-size="20">50%</text>
+            a 40 40 0 0 1 0 -80" />
+            <text id="pay_progress_text" x="50" y="35" fill="#006064" text-anchor="middle" dy="7"
+              font-size="20">50%</text>
             <text x="50" y="55" fill="#006064" text-anchor="middle" dy="7" font-size="10">پرداخت ها</text>
           </svg>
         </span>
@@ -60,38 +80,187 @@
           <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
             <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.7)" />
             <path id="floor_progress_path" fill="none" stroke-linecap="round" stroke-width="6" stroke="#006064"
-            stroke-dasharray="126.5,126.5"
-            d="m50 10
+              stroke-dasharray="126.5,126.5" d="m50 10
             a 40 40 0 0 1 0 80
-            a 40 40 0 0 1 0 -80"/>
-            <text id="floor_progress_text" x="50" y="35" fill="#006064" text-anchor="middle" dy="7" font-size="20">50%</text>
+            a 40 40 0 0 1 0 -80" />
+            <text id="floor_progress_text" x="50" y="35" fill="#006064" text-anchor="middle" dy="7"
+              font-size="20">50%</text>
             <text x="50" y="55" fill="#006064" text-anchor="middle" dy="7" font-size="10">پرداخت ها</text>
           </svg>
         </span>
       </div>
     </div>
   </div>
-  <div id="content2" class="item_content yellow"></div>
+  <!----------------================DashBoard End==============---------------->
+
+
+
+  <!----------------================AddUserPerson Start==============---------------->
+  <div id="content2" class="item_content active">
+    <div class="row p_1">
+      <form class="main_form col s12 m6 l4">
+        <h5 class=" center-align cyan-text text-darken-4">ثبت همسایه جدید</h5>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="name" type="text" class="validate">
+            <label class="teal-text text-darken-4" for="name">ثبت نام و نام خانوادگی</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="phone" type="text" class="validate">
+            <label class="teal-text text-darken-4" for="phone">شماره تماس</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="count" type="text" class="validate">
+            <label class="teal-text text-darken-4" for="count">تعداد افراد خانواده</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <select>
+              <option value="">انتخاب کنید</option>
+              <option value="1">طبقه 1</option>
+              <option value="2">طبقه 2</option>
+              <option value="3">طبقه 3</option>
+              <option value="4">طبقه 4</option>
+            </select>
+            <label class="teal-text text-darken-4">طبقه</label>
+          </div>
+          <div class="input-field col s6">
+            <select>
+              <option value="">انتخاب کنید</option>
+              <option value="1">واحد 1</option>
+              <option value="2">واحد 2</option>
+              <option value="3">واحد 3</option>
+              <option value="4">واحد 4</option>
+            </select>
+            <label class="teal-text text-darken-4">واحد</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span>ساکن</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field col s4">
+            <p>
+              <label>
+                <input name="group1" type="radio" checked />
+                <span>مالک</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field col s4">
+            <p>
+              <label>
+                <input name="group1" type="radio" checked />
+                <span>مستاجر</span>
+              </label>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s4">
+            <select>
+              <option value="1"> 1</option>
+              <option value="2"> 2</option>
+              <option value="3"> 3</option>
+              <option value="4"> 4</option>
+              <option value="5"> 5</option>
+              <option value="6"> 6</option>
+              <option value="7"> 7</option>
+              <option value="8"> 8</option>
+              <option value="9"> 9</option>
+              <option value="10"> 10</option>
+              <option value="11"> 11</option>
+              <option value="12"> 12</option>
+              <option value="13"> 13</option>
+              <option value="13"> 13</option>
+              <option value="13"> 13</option>
+              <option value="14"> 14</option>
+              <option value="15"> 15</option>
+              <option value="16"> 16</option>
+              <option value="17"> 17</option>
+              <option value="18"> 18</option>
+              <option value="19"> 19</option>
+              <option value="20"> 20</option>
+              <option value="21"> 21</option>
+              <option value="22"> 22</option>
+              <option value="23"> 23</option>
+              <option value="24"> 24</option>
+              <option value="25"> 25</option>
+              <option value="26"> 26</option>
+              <option value="27"> 27</option>
+              <option value="28"> 28</option>
+              <option value="29"> 29</option>
+              <option value="30"> 30</option>
+            </select>
+            <label class="teal-text text-darken-4">روز</label>
+          </div>
+          <div class="input-field col s4">
+            <select>
+              <option value="1">فروردین</option>
+              <option value="2">اردیبهشت</option>
+              <option value="3">خرداد</option>
+              <option value="4">تیر</option>
+              <option value="5">مرداد</option>
+              <option value="6">شهریور</option>
+              <option value="7">مهر</option>
+              <option value="8">آبان</option>
+              <option value="9">آذر</option>
+              <option value="10">دی</option>
+              <option value="11">بهمن</option>
+              <option value="12">اسفند</option>
+            </select>
+            <label class="teal-text text-darken-4">ماه</label>
+          </div>
+          <div class="input-field col s4">
+            <select>
+              <option value="1">1403</option>
+              <option value="2">1402</option>
+              <option value="3">1401</option>
+              <option value="4">1400</option>
+              <option value="5">1399</option>
+              <option value="6">1398</option>
+              <option value="7">1397</option>
+              <option value="8">1396</option>
+              <option value="9">1395</option>
+              <option value="10">1394</option>
+            </select>
+            <label class="teal-text text-darken-4">روز</label>
+          </div>
+
+          <div class="center-align">
+            <button class="btn waves-effect waves-light teal darken-4" type="button">
+              ثبت
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+
+      </form>
+    </div>
+  </div>
+  <!----------------================AddUserPerson End==============---------------->
+
+
+
+
+
   <div id="content3" class="item_content blue"></div>
   <div id="content4" class="item_content pink"></div>
   <div id="content5" class="item_content purple"></div>
   <!-- </section> -->
 
-  <!-------------------------------bottom menu start------------------------------->
-
-  <div class="fixed-action-btn toolbar hide-on-med-and-up">
-    <a class="btn-floating btn-large blue darken-3 flouting_quick-access">
-      <i class="fas fa-bars"></i>
-    </a>
-    <ul>
-      <li><a class="btn-floating quick_access_items darken-1"><i class="fa-solid fa-users"></i></a></li>
-      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-user-plus"></i></a></li>
-      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-money-bill-wave"></i></a></li>
-      <li><a class="btn-floating quick_access_items"><i class="fa-solid fa-envelope"></i></a></li>
-    </ul>
-  </div>
-
-  <!-------------------------------bottom menu end---------------------------------->
 
   <script src="/main/assest/js/materialize.js"></script>
   <script src="/main/assest/js/app.js"></script>
