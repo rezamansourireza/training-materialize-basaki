@@ -164,6 +164,22 @@ nav .brand-logo img {
     padding: 0 !important;
 }
 
+#content5 .collection .collection-item.active{
+    background-color: white !important;
+    color: unset !important;
+}
+
+#content5 .collapsible-header{
+    background-color: unset !important;
+   border-bottom: unset !;
+}
+
+#content5 .main_list_message{
+    border-radius: 10px !important;
+    max-height: calc(100vh - 1.5rem -68px);
+    overflow: auto !important;
+}
+
 @media(min-width:601px) {
     .px_md_5 {
         padding-left: 5rem !important;
