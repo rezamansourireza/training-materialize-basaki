@@ -16,6 +16,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var selectElm = document.querySelectorAll('select');
     M.FormSelect.init(selectElm , {});
 
+    
+    var autocompleteElm = document.querySelectorAll('autocomplete');
+    M.Autocomplete.init(autocompleteElm , {
+        data:{
+            null:"آب مشاع",
+            null:"برق مشاع",
+            null:"برق",
+            null:"آب",
+            null:"شارژ",
+        
+        },
+    });
 
 
     var quickAccessNodes = Array.prototype.slice.call(document.querySelectorAll('.quick_access_items'));

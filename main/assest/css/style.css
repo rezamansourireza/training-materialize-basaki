@@ -147,6 +147,7 @@ nav .brand-logo img {
     backdrop-filter: blur(3px);
     box-shadow: 0 0 5px #263238;
     overflow: auto;
+    max-height: calc(100vh - 1.5rem - 68px);
 }
 
 .main_table thead {
@@ -174,9 +175,30 @@ nav .brand-logo img {
     }
 }
 
+@media(max-width:993px){
+    .main_table tr , .main_table td{
+        padding: 0.8rem 0.3rem !important;
+    }
+}
+
 @media (min-width:992px) {
     nav .brand-logo {
         right: unset !important;
         left: 0.5rem !important;
     }
 }
+
+/* -------=============== ScrollBar start =============--------- */
+::-webkit-scrollbar{
+    width: 5px !important;
+}
+::-webkit-scrollbar-track{
+    background: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+/* -------=============== ScrollBar   end =============--------- */
